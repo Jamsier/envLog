@@ -1,0 +1,886 @@
+labuser@labuser-NUC8i3BEH:~$ ./scripts/run5_oai_l1.sh 
+[sudo] password for labuser: 
+CMDLINE: "./nr-softmodem" "-O" "../../../targets/PROJECTS/GENERIC-LTE-EPC/CONF/oaiL1.nfapi.usrpb210.conf" "--sa" "-E" "--gNBs.[0].min_rxtxtime" "6" "--continuous-tx" "--nfapi" "1" 
+[CONFIG] get parameters from libconfig ../../../targets/PROJECTS/GENERIC-LTE-EPC/CONF/oaiL1.nfapi.usrpb210.conf , debug flags: 0x00000000
+[LIBCONFIG] Path for include directive set to: ../../../targets/PROJECTS/GENERIC-LTE-EPC/CONF
+[CONFIG] function config_libconfig_init returned 0
+[CONFIG] config module libconfig loaded
+[LIBCONFIG] config: 1/1 parameters successfully set, (1 to default value)
+[LIBCONFIG] log_config: 3/3 parameters successfully set, (1 to default value)
+[LIBCONFIG] log_config: 55/55 parameters successfully set, (49 to default value)
+[LIBCONFIG] log_config: 55/55 parameters successfully set, (55 to default value)
+[LIBCONFIG] log_config: 16/16 parameters successfully set, (16 to default value)
+[LIBCONFIG] log_config: 16/16 parameters successfully set, (16 to default value)
+log init done
+[HW]   # /dev/cpu_dma_latency set to 2 us
+Reading in command-line options
+[LIBCONFIG] (root): 36/36 parameters successfully set, (32 to default value)
+[LIBCONFIG] (root): 5/5 parameters successfully set, (4 to default value)
+[ENB_APP]   nfapi running mode: PNF
+[GNB_APP]   Getting GNBSParams
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
+[CONFIG] parallel_conf is set to 0
+[CONFIG] worker_conf is set to 1
+Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
+[LIBCONFIG] TTracer: 4/4 parameters successfully set, (4 to default value)
+configuring for RAU/RRU
+CPU Freq is 2.999948 
+[ITTI]   Starting itti queue: TASK_UNKNOWN as task 0
+[ITTI]   Starting itti queue: TASK_TIMER as task 1
+[ITTI]   Starting itti queue: TASK_L2L1 as task 2
+[ITTI]   Starting itti queue: TASK_BM as task 3
+[ITTI]   Starting itti queue: TASK_PHY_ENB as task 4
+[ITTI]   Starting itti queue: TASK_MAC_ENB as task 5
+[ITTI]   Starting itti queue: TASK_MAC_GNB as task 6
+[ITTI]   Starting itti queue: TASK_RLC_ENB as task 7
+[ITTI]   Starting itti queue: TASK_RRC_ENB_NB_IoT as task 8
+[ITTI]   Starting itti queue: TASK_PDCP_ENB as task 9
+[ITTI]   Starting itti queue: TASK_PDCP_GNB as task 10
+[ITTI]   Starting itti queue: TASK_DATA_FORWARDING as task 11
+[ITTI]   Starting itti queue: TASK_END_MARKER as task 12
+[ITTI]   Starting itti queue: TASK_RRC_ENB as task 13
+[ITTI]   Starting itti queue: TASK_RRC_GNB as task 14
+[ITTI]   Starting itti queue: TASK_RAL_ENB as task 15
+[ITTI]   Starting itti queue: TASK_S1AP as task 16
+[ITTI]   Starting itti queue: TASK_NGAP as task 17
+[ITTI]   Starting itti queue: TASK_X2AP as task 18
+[ITTI]   Starting itti queue: TASK_M2AP_ENB as task 19
+[ITTI]   Starting itti queue: TASK_M2AP_MCE as task 20
+[ITTI]   Starting itti queue: TASK_M3AP as task 21
+[ITTI]   Starting itti queue: TASK_M3AP_MME as task 22
+[ITTI]   Starting itti queue: TASK_M3AP_MCE as task 23
+[ITTI]   Starting itti queue: TASK_SCTP as task 24
+[ITTI]   Starting itti queue: TASK_ENB_APP as task 25
+[ITTI]   Starting itti queue: TASK_GNB_APP as task 26
+[ITTI]   Starting itti queue: TASK_MCE_APP as task 27
+[ITTI]   Starting itti queue: TASK_MME_APP as task 28
+[ITTI]   Starting itti queue: TASK_FLEXRAN_AGENT as task 29
+[ITTI]   Starting itti queue: TASK_PHY_UE as task 30
+[ITTI]   Starting itti queue: TASK_MAC_UE as task 31
+[ITTI]   Starting itti queue: TASK_RLC_UE as task 32
+[ITTI]   Starting itti queue: TASK_PDCP_UE as task 33
+[ITTI]   Starting itti queue: TASK_RRC_UE as task 34
+[ITTI]   Starting itti queue: TASK_RRC_NRUE as task 35
+[ITTI]   Starting itti queue: TASK_NAS_UE as task 36
+[ITTI]   Starting itti queue: TASK_RAL_UE as task 37
+[ITTI]   Starting itti queue: TASK_GTPV1_U as task 38
+[ITTI]   Starting itti queue: TASK_CU_F1 as task 39
+[ITTI]   Starting itti queue: TASK_DU_F1 as task 40
+[ITTI]   Starting itti queue: TASK_RRC_UE_SIM as task 41
+[ITTI]   Starting itti queue: TASK_RRC_GNB_SIM as task 42
+[ITTI]   Starting itti queue: TASK_RRC_NSA_UE as task 43
+[ITTI]   Starting itti queue: TASK_RRC_NSA_NRUE as task 44
+[ITTI]   Starting itti queue: TASK_NAS_NRUE as task 45
+[LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)
+[OPT]   OPT disabled
+[HW]   Version: Branch: main Abrev. Hash: 58d5c3c Date: Tue Apr 2 04:58:22 2024 -0700
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
+[NR_PHY]   PRB blacklist 
+[NR_PHY]   RC.gNB = 0x5644a555bef0
+[LIBCONFIG] L1s.[0]: 15/15 parameters successfully set, (6 to default value)
+[NR_PHY]   RC.gNB[0] = 0x7f2d647d0010
+[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[PHY]   RCconfig_NR_L1() NFAPI PNF mode - RC.nb_nr_inst=1 this is because phy_init_RU() uses that to index and not RC.num_gNB - why the 2 similar variables?
+[PHY]   RCconfig_NR_L1() NFAPI PNF mode - RC.nb_nr_CC[0]=1 for init_gNB_afterRU()
+[PHY]   RCconfig_NR_L1() NFAPI PNF mode - RC.nb_nr_macrlc_inst:1 because used by mac_top_init_gNB()
+configure_nr_nfapi_pnf() PNF
+
+
+
+
+
+[ENB_APP]   nfapi running mode: PNF
+configure_nr_nfapi_pnf() VNF:127.0.0.1:62324 PNF_PHY[addr:127.0.0.2 UDP:tx_addr:127.0.0.1:50611 rx:32123]
+Initializing northbound interface for L1
+[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[PHY]   Installing callbacks for IF_Module - UL_indication
+[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x5644a55608f0
+[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+
+ Read message unpack:  0  0  1  0  0  8  0  0 
+[PNF] pnf param request
+
+ Read message unpack:  0  0  1  2  0  26  0  0  16  3  0  14  0  2  0  1  0  0  0  0  0  0  0  0  0  0 
+[PNF] pnf config request
+[PNF] pnf config request assigned phy_id 1 to phy_config_index 0
+[PNF] Sent pnf_config_resp
+
+ Read message unpack:  0  0  1  4  0  8  0  0 
+Received NFAPI_PNF_START_REQUEST
+[PNF] Sent NFAPI_PNF_START_RESP
+
+ Read message unpack:  0  1  0  0  0  8  0  0 
+[PNF] Received NFAPI_PARAM_REQUEST phy_id:1
+TAG value :2
+RUNNING pack_param_response
+[PNF] Sent NFAPI_PNF_PARAM_RESPONSE phy_id:1 number_of_tlvs:62
+[PNF] param request .. exit
+
+ Read message unpack:  0  1  0  2  2  236  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  2  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  34  16  1  0  2  0  20  16  2  0  4  0  28  29  68  16  4  0  2  0  106  16  5  0  2  0  1  16  6  0  2  0  20  16  7  0  4  0  26  170  44  16  9  0  2  0  106  16  10  0  2  0  1  16  12  0  2  0  1  16  13  0  1  0  16  14  0  4  0  0  0  0  16  16  0  1  0  16  18  0  1  15  16  19  0  1  0  16  20  0  1  1  16  41  0  1  88  16  21  0  2  0  0  16  23  0  2  0  0  16  24  0  1  4  16  27  0  1  1  16  29  0  2  0  24  16  31  0  1  2  16  32  0  1  0  16  33  0  4  0  0  6  0  16  34  0  4  0  0  0  1  1  0  0  4  127  0  0  1  1  2  0  2  197  179  1  31  0  1  3  1  32  0  1  10  1  30  0  1  30 
+[PNF] Received NFAPI_CONFIG_REQ phy_id:1
+
+Timing window tag: 286
+Phy_info:Timing window:30 NFAPI_CONFIG:timing_window:30
+timing info mode:3
+timing info period provided value:10
+nr_config_request() NFAPI_NR_CONFIG_DL_BANDWIDTH_TAG N_RB_DL:20
+[PNF] CONFIG_REQUEST[num_tlv:34] TLVs processed:6
+[PNF] Simulating PHY CONFIG - DJP
+DL frequency 1842500000: band 3, UL frequency 1747500000
+[PHY]   DL frequency 1842500000 Hz, UL frequency 1747500000 Hz: band 3, uldl offset -95000000 Hz
+[PHY]   Configuring MIB for instance 0, : (Nid_cell 1,DL freq 1842500000, UL freq 1747500000)
+[PHY]   Initializing frame parms for mu 0, N_RB 0, Ncp 0
+[PHY]   Init: N_RB_DL 0, first_carrier_offset 384, nb_prefix_samples 27,nb_prefix_samples0 30
+[PHY]   Doing symbol rotation calculation for gNB TX/RX, f0 1842500000.000000 Hz, Nsymb 14
+[PHY]   Symbol rotation 0/14 => tl 0.000000 (-19948,-25996) (0.354167)
+[PHY]   Symbol rotation 1/14 => tl 0.000072 (-27245,-18205) (0.406250)
+[PHY]   Symbol rotation 2/14 => tl 0.000143 (-31651,-8481) (0.458333)
+[PHY]   Symbol rotation 3/14 => tl 0.000215 (-32697,2143) (0.510417)
+[PHY]   Symbol rotation 4/14 => tl 0.000286 (-30273,12539) (0.562500)
+[PHY]   Symbol rotation 5/14 => tl 0.000357 (-24636,21604) (0.614583)
+[PHY]   Symbol rotation 6/14 => tl 0.000429 (-16384,28377) (0.666667)
+[PHY]   Symbol rotation 7/14 => tl 0.000500 (-19948,-25996) (0.354167)
+[PHY]   Symbol rotation 8/14 => tl 0.000572 (-27245,-18205) (0.406250)
+[PHY]   Symbol rotation 9/14 => tl 0.000643 (-31651,-8481) (0.458333)
+[PHY]   Symbol rotation 10/14 => tl 0.000715 (-32697,2143) (0.510417)
+[PHY]   Symbol rotation 11/14 => tl 0.000786 (-30273,12539) (0.562500)
+[PHY]   Symbol rotation 12/14 => tl 0.000857 (-24636,21604) (0.614583)
+[PHY]   Symbol rotation 13/14 => tl 0.000929 (-16384,28377) (0.666667)
+[PHY]   Doing symbol rotation calculation for gNB TX/RX, f0 1747500000.000000 Hz, Nsymb 14
+[PHY]   Symbol rotation 0/14 => tl 0.000000 (-30273,12539) (0.562500)
+[PHY]   Symbol rotation 1/14 => tl 0.000072 (32137,6392) (0.968750)
+[PHY]   Symbol rotation 2/14 => tl 0.000143 (-23170,-23170) (0.375000)
+[PHY]   Symbol rotation 3/14 => tl 0.000215 (6392,32137) (0.781250)
+[PHY]   Symbol rotation 4/14 => tl 0.000286 (12539,-30273) (0.187500)
+[PHY]   Symbol rotation 5/14 => tl 0.000357 (-27245,18204) (0.593750)
+[PHY]   Symbol rotation 6/14 => tl 0.000429 (32767,0) (0.000000)
+[PHY]   Symbol rotation 7/14 => tl 0.000500 (-30273,12539) (0.562500)
+[PHY]   Symbol rotation 8/14 => tl 0.000572 (32137,6392) (0.968750)
+[PHY]   Symbol rotation 9/14 => tl 0.000643 (-23170,-23170) (0.375000)
+[PHY]   Symbol rotation 10/14 => tl 0.000715 (6392,32137) (0.781250)
+[PHY]   Symbol rotation 11/14 => tl 0.000786 (12539,-30273) (0.187500)
+[PHY]   Symbol rotation 12/14 => tl 0.000857 (-27245,18204) (0.593750)
+[PHY]   Symbol rotation 13/14 => tl 0.000929 (32767,0) (1.000000)
+[PHY]   Timeshift symbol rotation 0 => (32767,0) 0.000000
+[PHY]   Timeshift symbol rotation 1 => (32728,1608) -0.049087
+[PHY]   Timeshift symbol rotation 2 => (32609,3212) -0.098175
+[PHY]   Timeshift symbol rotation 3 => (32412,4808) -0.147262
+[PHY]   Timeshift symbol rotation 4 => (32137,6393) -0.196350
+[PHY]   Timeshift symbol rotation 5 => (31785,7962) -0.245437
+[PHY]   Timeshift symbol rotation 6 => (31356,9512) -0.294524
+[PHY]   Timeshift symbol rotation 7 => (30852,11039) -0.343612
+[PHY]   Timeshift symbol rotation 8 => (30273,12539) -0.392699
+[PHY]   Timeshift symbol rotation 9 => (29621,14010) -0.441786
+[PHY]   gNB 0 configured
+[PHY]   fp->scs=15000
+[PHY]   fp->ofdm_symbol_size=384
+[PHY]   fp->nb_prefix_samples0=30
+[PHY]   fp->nb_prefix_samples=27
+[PHY]   fp->slots_per_subframe=1
+[PHY]   fp->samples_per_subframe_wCP=5376
+[PHY]   fp->samples_per_frame_wCP=53760
+[PHY]   fp->samples_per_subframe=5760
+[PHY]   fp->samples_per_frame=57600
+[PHY]   fp->dl_CarrierFreq=1842500000
+[PHY]   fp->ul_CarrierFreq=1747500000
+[PNF] 1 vnf p7 127.0.0.1:50611 timing 30 3 10
+[PNF] Sent NFAPI_PNF_CONFIG_RESPONSE phy_id:1
+[ITTI]   Created Posix thread TASK_SCTP
+[LIBCONFIG] eNBs.[0]: 1/1 parameters successfully set, (1 to default value)
+[LIBCONFIG] gNBs.[0]: 1/1 parameters successfully set, (1 to default value)
+[X2AP]   X2AP is disabled.
+
+ Read message unpack:  0  1  0  4  0  8  0  0 
+[PNF] Received NFAPI_START_REQ phy_id:1
+[PNF] P7 remote:127.0.0.1:50611 local:127.0.0.2:32123
+subframe_buffer_size configured using phy_info->timing_window:30
+[PNF] Sending PNF_START_RESP
+Sending NFAPI_START_RESPONSE config:0x5644a555e670 phy_id:1
+[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+Calling sched_setscheduler(79)
+[PHY]   Installing callbacks for IF_Module - UL_indication
+[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
+[NGAP]   Starting NGAP layer
+[ITTI]   Created Posix thread TASK_NGAP
+[PHY]   gNB_app_task() Task ready initialize structures
+[ITTI]   Created Posix thread TASK_GNB_APP
+[NR_RRC]   Creating NR RRC gNB Task
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
+[NR_PHY]   PRB blacklist 
+[LIBCONFIG] L1s.[0]: 15/15 parameters successfully set, (6 to default value)
+[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[PHY]   RCconfig_NR_L1() NFAPI PNF mode - RC.nb_nr_inst=1 this is because phy_init_RU() uses that to index and not RC.num_gNB - why the 2 similar variables?
+[PHY]   RCconfig_NR_L1() NFAPI PNF mode - RC.nb_nr_CC[0]=1 for init_gNB_afterRU()
+[PHY]   RCconfig_NR_L1() NFAPI PNF mode - RC.nb_nr_macrlc_inst:1 because used by mac_top_init_gNB()
+configure_nr_nfapi_pnf() PNF
+
+
+
+
+
+[ENB_APP]   nfapi running mode: PNF
+configure_nr_nfapi_pnf() VNF:127.0.0.1:62324 PNF_PHY[addr:127.0.0.2 UDP:tx_addr:127.0.0.1:50611 rx:32123]
+Initializing northbound interface for L1
+[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[PHY]   Installing callbacks for IF_Module - UL_indication
+[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+[LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
+
+ Read message unpack:  0  0  1  0  0  8  0  0 
+[PNF] pnf param request
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+
+ Read message unpack:  0  0  1  2  0  26  0  0  16  3  0  14  0  2  0  2  0  0  0  0  0  0  0  0  0  0 
+[PNF] pnf config request
+[PNF] pnf config request assigned phy_id 2 to phy_config_index 0
+[MAC]   [MAIN] Init function start:nb_nr_macrlc_inst=1
+[PNF] Sent pnf_config_resp
+
+ Read message unpack:  0  0  1  4  0  8  0  0 
+Received NFAPI_PNF_START_REQUEST
+[PNF] Sent NFAPI_PNF_START_RESP
+
+ Read message unpack:  0  2  0  0  0  8  0  0 
+[PNF] Received NFAPI_PARAM_REQUEST phy_id:2
+TAG value :2
+RUNNING pack_param_response
+[PNF] Sent NFAPI_PNF_PARAM_RESPONSE phy_id:2 number_of_tlvs:62
+[PNF] param request .. exit
+[PHY]   Installing callbacks for IF_Module - UL_indication
+[NR_MAC]   PUSCH Target 150, PUCCH Target 200, PUCCH Failure 10, PUSCH Failure 10
+[PHY]   gNB_app_task() RC.nb_nr_L1_inst:1
+[PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
+[PHY]   Installing callbacks for IF_Module - UL_indication
+[PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[GNB_APP]   Allocating gNB_RRC_INST for 1 instances
+[PHY]   gNB_app_task() RC.nb_nr_inst:1 RC.nrrrc:0x7f2d5400cdf0
+[PHY]   gNB_app_task() Creating RRC instance RC.nrrrc[0]:0x7f2d5400ce10 (1 of 1)
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
+[LIBCONFIG] gNBs.[0].pdcch_ConfigSIB1.[0]: 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].servingCellConfigCommon.[0]: 60/60 parameters successfully set, (8 to default value)
+[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 368629, DLBand 3, ABSFREQPOINTA 365000, DLBW 106,RACH_TargetReceivedPower -96
+[PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
+[NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
+[NR_MAC]   NR band 3, duplex mode FDD, duplex spacing = -95000 KHz
+[PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
+[NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
+[NR_MAC]   NR band 3, duplex mode FDD, duplex spacing = -95000 KHz
+[LIBCONFIG] gNBs.[0].servingCellConfigDedicated.[0]: 42/42 parameters successfully set, (21 to default value)
+[RRC]   Read in ServingCellConfigDedicated UL (FreqDensity_0 -1, FreqDensity_1 -1, TimeDensity_0 -1, TimeDensity_1 -1, TimeDensity_2 -1, RE offset -1, First_active_BWP_ID 1 SCS 0, LocationandBW 28875 
+[GNB_APP]   DL PTRS frequencyDensity 1 not set. Assuming PTRS not present! 
+[GNB_APP]   DL PTRS frequencyDensity 1 not set. Assuming PTRS not present! 
+[GNB_APP]   DL PTRS frequencyDensity 1 not set. Assuming PTRS not present! 
+[GNB_APP]   UL PTRS frequencyDensity 1 not set. Assuming PTRS not present! 
+[GNB_APP]   UL PTRS frequencyDensity 1 not set. Assuming PTRS not present! 
+[GNB_APP]   UL PTRS frequencyDensity 1 not set. Assuming PTRS not present! 
+NRRRC 0: Southbound Transport local_mac
+[NR_RRC]   Setting node_type to ngran_gNB
+[LIBCONFIG] gNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)
+[GNB_APP]   pdsch_AntennaPorts N1 1
+[GNB_APP]   pdsch_AntennaPorts N2 1
+[GNB_APP]   pdsch_AntennaPorts XP 1
+[GNB_APP]   pusch_AntennaPorts 1
+[GNB_APP]   minTXRXTIME 6
+[GNB_APP]   SIB1 TDA 1
+[GNB_APP]   Do CSI-RS 1
+[GNB_APP]   Do SRS 1
+[GNB_APP]   256 QAM: may be on
+[GNB_APP]   SDAP layer is disabled
+[LIBCONFIG] security: 4/4 parameters successfully set, (2 to default value)
+[RRC]   no preferred ciphering algorithm set in configuration file, applying default parameters (no security)
+[RRC]   no preferred integrity algorithm set in configuration file, applying default parameters (nia2)
+[GNB_APP]   RRC starting with node type 2
+[GNB_APP]   Sending configuration message to NR_RRC task
+[PDCP]   pdcp init,usegtp 
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
+[LIBCONFIG] gNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].plmn_list.[0].snssaiList.[0]: 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].amf_ip_address.[0]: 4/4 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].SCTP: 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
+[GNB_APP]   default drx 0
+[GTPU]   Configuring GTPu
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
+[LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
+[GTPU]   SA mode 
+[GTPU]   Configuring GTPu address : 192.168.1.124 -> 7c01a8c0
+[GNB_APP]   [gNB 0] gNB_app_register for instance 0
+[NGAP]   Registered new gNB[0] and macro gNB id 3584
+[NGAP]   [gNB 0] check the amf registration state
+[NR_RRC]   Entering main loop of NR_RRC message task
+[NR_RRC]   Received message NRRRC_CONFIGURATION_REQ
+[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x7f2d5400e4f0
+[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Init...
+[ITTI]   Created Posix thread TASK_RRC_GNB
+[PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
+[NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
+[NR_MAC]   NR band 3, duplex mode FDD, duplex spacing = -95000 KHz
+[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Checking release 
+[NR_RRC]   SIB1 freq: absoluteFrequencySSB 368629, absoluteFrequencyPointA 365000
+[NR_RRC]   SIB1 freq: absolute_diff 3629, 1*(absolute_diff/(12*3) - 10) 90
+<SIB1>
+    <cellSelectionInfo>
+        <q-RxLevMin>-65</q-RxLevMin>
+    </cellSelectionInfo>
+    <cellAccessRelatedInfo>
+        <plmn-IdentityList>
+            <PLMN-IdentityInfo>
+                <plmn-IdentityList>
+                    <PLMN-Identity>
+                        <mcc>
+                            <MCC-MNC-Digit>4</MCC-MNC-Digit>
+                            <MCC-MNC-Digit>6</MCC-MNC-Digit>
+                            <MCC-MNC-Digit>6</MCC-MNC-Digit>
+                        </mcc>
+                        <mnc>
+                            <MCC-MNC-Digit>9</MCC-MNC-Digit>
+                            <MCC-MNC-Digit>2</MCC-MNC-Digit>
+                        </mnc>
+                    </PLMN-Identity>
+                </plmn-IdentityList>
+                <trackingAreaCode>
+                    000000000000000000000001
+                </trackingAreaCode>
+                <cellIdentity>
+                    000000000000000000000000111000000000
+                </cellIdentity>
+                <cellReservedForOperatorUse><notReserved/></cellReservedForOperatorUse>
+            </PLMN-IdentityInfo>
+        </plmn-IdentityList>
+    </cellAccessRelatedInfo>
+    <servingCellConfigCommon>
+        <downlinkConfigCommon>
+            <frequencyInfoDL>
+                <frequencyBandList>
+                    <NR-MultiBandInfo>
+                        <freqBandIndicatorNR>3</freqBandIndicatorNR>
+                    </NR-MultiBandInfo>
+                </frequencyBandList>
+                <offsetToPointA>90</offsetToPointA>
+                <scs-SpecificCarrierList>
+                    <SCS-SpecificCarrier>
+                        <offsetToCarrier>0</offsetToCarrier>
+                        <subcarrierSpacing><kHz15/></subcarrierSpacing>
+                        <carrierBandwidth>106</carrierBandwidth>
+                    </SCS-SpecificCarrier>
+                </scs-SpecificCarrierList>
+            </frequencyInfoDL>
+            <initialDownlinkBWP>
+                <genericParameters>
+                    <locationAndBandwidth>28875</locationAndBandwidth>
+                    <subcarrierSpacing><kHz15/></subcarrierSpacing>
+                </genericParameters>
+                <pdcch-ConfigCommon>
+                    <setup>
+                        <controlResourceSetZero>0</controlResourceSetZero>
+                        <searchSpaceZero>0</searchSpaceZero>
+                        <commonSearchSpaceList>
+                            <SearchSpace>
+                                <searchSpaceId>1</searchSpaceId>
+                                <controlResourceSetId>0</controlResourceSetId>
+                                <monitoringSlotPeriodicityAndOffset>
+                                    <sl1></sl1>
+                                </monitoringSlotPeriodicityAndOffset>
+                                <monitoringSymbolsWithinSlot>
+                                    10000000000000
+                                </monitoringSymbolsWithinSlot>
+                                <nrofCandidates>
+                                    <aggregationLevel1><n0/></aggregationLevel1>
+                                    <aggregationLevel2><n0/></aggregationLevel2>
+                                    <aggregationLevel4><n2/></aggregationLevel4>
+                                    <aggregationLevel8><n0/></aggregationLevel8>
+                                    <aggregationLevel16><n0/></aggregationLevel16>
+                                </nrofCandidates>
+                                <searchSpaceType>
+                                    <common>
+                                        <dci-Format0-0-AndFormat1-0>
+                                        </dci-Format0-0-AndFormat1-0>
+                                    </common>
+                                </searchSpaceType>
+                            </SearchSpace>
+                            <SearchSpace>
+                                <searchSpaceId>5</searchSpaceId>
+                                <controlResourceSetId>0</controlResourceSetId>
+                                <monitoringSlotPeriodicityAndOffset>
+                                    <sl5>0</sl5>
+                                </monitoringSlotPeriodicityAndOffset>
+                                <duration>2</duration>
+                                <monitoringSymbolsWithinSlot>
+                                    10000000000000
+                                </monitoringSymbolsWithinSlot>
+                                <nrofCandidates>
+                                    <aggregationLevel1><n0/></aggregationLevel1>
+                                    <aggregationLevel2><n0/></aggregationLevel2>
+                                    <aggregationLevel4><n4/></aggregationLevel4>
+                                    <aggregationLevel8><n2/></aggregationLevel8>
+                                    <aggregationLevel16><n1/></aggregationLevel16>
+                                </nrofCandidates>
+                                <searchSpaceType>
+                                    <common>
+                                        <dci-Format0-0-AndFormat1-0>
+                                        </dci-Format0-0-AndFormat1-0>
+                                    </common>
+                                </searchSpaceType>
+                            </SearchSpace>
+                            <SearchSpace>
+                                <searchSpaceId>7</searchSpaceId>
+                                <controlResourceSetId>0</controlResourceSetId>
+                                <monitoringSlotPeriodicityAndOffset>
+                                    <sl1></sl1>
+                                </monitoringSlotPeriodicityAndOffset>
+                                <monitoringSymbolsWithinSlot>
+                                    10000000000000
+                                </monitoringSymbolsWithinSlot>
+                                <nrofCandidates>
+                                    <aggregationLevel1><n0/></aggregationLevel1>
+                                    <aggregationLevel2><n0/></aggregationLevel2>
+                                    <aggregationLevel4><n4/></aggregationLevel4>
+                                    <aggregationLevel8><n2/></aggregationLevel8>
+                                    <aggregationLevel16><n1/></aggregationLevel16>
+                                </nrofCandidates>
+                                <searchSpaceType>
+                                    <common>
+                                        <dci-Format0-0-AndFormat1-0>
+                                        </dci-Format0-0-AndFormat1-0>
+                                    </common>
+                                </searchSpaceType>
+                            </SearchSpace>
+                        </commonSearchSpaceList>
+                        <searchSpaceSIB1>0</searchSpaceSIB1>
+                        <searchSpaceOtherSystemInformation>7</searchSpaceOtherSystemInformation>
+                        <pagingSearchSpace>5</pagingSearchSpace>
+                        <ra-SearchSpace>1</ra-SearchSpace>
+                    </setup>
+                </pdcch-ConfigCommon>
+                <pdsch-ConfigCommon>
+                    <setup>
+                        <pdsch-TimeDomainAllocationList>
+                            <PDSCH-TimeDomainResourceAllocation>
+                                <mappingType><typeA/></mappingType>
+                                <startSymbolAndLength>40</startSymbolAndLength>
+                            </PDSCH-TimeDomainResourceAllocation>
+                            <PDSCH-TimeDomainResourceAllocation>
+                                <mappingType><typeA/></mappingType>
+                                <startSymbolAndLength>54</startSymbolAndLength>
+                            </PDSCH-TimeDomainResourceAllocation>
+                        </pdsch-TimeDomainAllocationList>
+                    </setup>
+                </pdsch-ConfigCommon>
+            </initialDownlinkBWP>
+            <bcch-Config>
+                <modificationPeriodCoeff><n2/></modificationPeriodCoeff>
+            </bcch-Config>
+            <pcch-Config>
+                <defaultPagingCycle><rf256/></defaultPagingCycle>
+                <nAndPagingFrameOffset>
+                    <quarterT>1</quarterT>
+                </nAndPagingFrameOffset>
+                <ns><one/></ns>
+                <firstPDCCH-MonitoringOccasionOfPO>
+                    <sCS120KHZoneT-SCS60KHZhalfT-SCS30KHZquarterT-SCS15KHZoneEighthT>
+                        <INTEGER>0</INTEGER>
+                    </sCS120KHZoneT-SCS60KHZhalfT-SCS30KHZquarterT-SCS15KHZoneEighthT>
+                </firstPDCCH-MonitoringOccasionOfPO>
+            </pcch-Config>
+        </downlinkConfigCommon>
+        <uplinkConfigCommon>
+            <frequencyInfoUL>
+                <scs-SpecificCarrierList>
+                    <SCS-SpecificCarrier>
+                        <offsetToCarrier>0</offsetToCarrier>
+                        <subcarrierSpacing><kHz15/></subcarrierSpacing>
+                        <carrierBandwidth>106</carrierBandwidth>
+                    </SCS-SpecificCarrier>
+                </scs-SpecificCarrierList>
+                <p-Max>23</p-Max>
+            </frequencyInfoUL>
+            <initialUplinkBWP>
+                <genericParameters>
+                    <locationAndBandwidth>28875</locationAndBandwidth>
+                    <subcarrierSpacing><kHz15/></subcarrierSpacing>
+                </genericParameters>
+                <rach-ConfigCommon>
+                    <setup>
+                        <rach-ConfigGeneric>
+                            <prach-ConfigurationIndex>98</prach-ConfigurationIndex>
+                            <msg1-FDM><one/></msg1-FDM>
+                            <msg1-FrequencyStart>0</msg1-FrequencyStart>
+                            <zeroCorrelationZoneConfig>13</zeroCorrelationZoneConfig>
+                            <preambleReceivedTargetPower>-96</preambleReceivedTargetPower>
+                            <preambleTransMax><n10/></preambleTransMax>
+                            <powerRampingStep><dB2/></powerRampingStep>
+                            <ra-ResponseWindow><sl10/></ra-ResponseWindow>
+                        </rach-ConfigGeneric>
+                        <ssb-perRACH-OccasionAndCB-PreamblesPerSSB>
+                            <one><n60/></one>
+                        </ssb-perRACH-OccasionAndCB-PreamblesPerSSB>
+                        <ra-ContentionResolutionTimer><sf64/></ra-ContentionResolutionTimer>
+                        <rsrp-ThresholdSSB>19</rsrp-ThresholdSSB>
+                        <prach-RootSequenceIndex>
+                            <l139>1</l139>
+                        </prach-RootSequenceIndex>
+                        <msg1-SubcarrierSpacing><kHz30/></msg1-SubcarrierSpacing>
+                        <restrictedSetConfig><unrestrictedSet/></restrictedSetConfig>
+                    </setup>
+                </rach-ConfigCommon>
+                <pusch-ConfigCommon>
+                    <setup>
+                        <pusch-TimeDomainAllocationList>
+                            <PUSCH-TimeDomainResourceAllocation>
+                                <k2>6</k2>
+                                <mappingType><typeB/></mappingType>
+                                <startSymbolAndLength>41</startSymbolAndLength>
+                            </PUSCH-TimeDomainResourceAllocation>
+                        </pusch-TimeDomainAllocationList>
+                        <msg3-DeltaPreamble>1</msg3-DeltaPreamble>
+                        <p0-NominalWithGrant>-90</p0-NominalWithGrant>
+                    </setup>
+                </pusch-ConfigCommon>
+                <pucch-ConfigCommon>
+                    <setup>
+                        <pucch-ResourceCommon>0</pucch-ResourceCommon>
+                        <pucch-GroupHopping><neither/></pucch-GroupHopping>
+                        <hoppingId>40</hoppingId>
+                        <p0-nominal>-90</p0-nominal>
+                    </setup>
+                </pucch-ConfigCommon>
+            </initialUplinkBWP>
+            <timeAlignmentTimerCommon><infinity/></timeAlignmentTimerCommon>
+        </uplinkConfigCommon>
+        <ssb-PositionsInBurst>
+            <inOneGroup>
+                10000000
+            </inOneGroup>
+        </ssb-PositionsInBurst>
+        <ssb-PeriodicityServingCell><ms20/></ssb-PeriodicityServingCell>
+        <ss-PBCH-BlockPower>-25</ss-PBCH-BlockPower>
+    </servingCellConfigCommon>
+    <ue-TimersAndConstants>
+        <t300><ms400/></t300>
+        <t301><ms400/></t301>
+        <t310><ms2000/></t310>
+        <n310><n10/></n310>
+        <t311><ms3000/></t311>
+        <n311><n1/></n311>
+        <t319><ms400/></t319>
+    </ue-TimersAndConstants>
+</SIB1>
+[NR_RRC]   do_SIB23_NR, size 9 
+ [NR_RRC]   Done init_NR_SI
+[NR_MAC]   Configuring common parameters from NR ServingCellConfig
+[NR_MAC]   config_common() dl_BandwidthP:20
+[PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
+[PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
+[NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
+[NR_MAC]   Computing frequency (pointA 365000 => 1825000 KHz (freq_min 1805000 KHz, NR band 3 N_OFFs 361000))
+[NR_MAC]   config_common() dl_BandwidthP:20
+[PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
+[PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
+[NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
+[NR_MAC]   Computing frequency (pointA 349500 => 1747500 KHz (freq_min 1710000 KHz, NR band 3 N_OFFs 342000))
+[PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
+[NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
+[NR_MAC]   NR band 3, duplex mode FDD, duplex spacing = -95000 KHz
+[NR_MAC]   Set RX antenna number to 1, Set TX antenna number to 1 (num ssb 1: 80000000,0)
+DL frequency 1834540000: band 3, UL frequency 1757040000
+[PHY]   DL frequency 1834540000 Hz, UL frequency 1757040000 Hz: band 3, uldl offset -77500000 Hz
+[PHY]   Configuring MIB for instance 0, : (Nid_cell 0,DL freq 1834540000, UL freq 1757040000)
+[PHY]   Initializing frame parms for mu 0, N_RB 106, Ncp 0
+[PHY]   Init: N_RB_DL 106, first_carrier_offset 900, nb_prefix_samples 108,nb_prefix_samples0 120
+[PHY]   Already gNB already configured, do nothing
+[NR_MAC]   In rrc_mac_config_req_gNB: slot 0 DL 1 UL 1
+[NR_MAC]   In rrc_mac_config_req_gNB: slot 1 DL 1 UL 1
+[NR_MAC]   In rrc_mac_config_req_gNB: slot 2 DL 1 UL 1
+[NR_MAC]   In rrc_mac_config_req_gNB: slot 3 DL 1 UL 1
+[NR_MAC]   In rrc_mac_config_req_gNB: slot 4 DL 1 UL 1
+[NR_MAC]   In rrc_mac_config_req_gNB: slot 5 DL 1 UL 1
+[NR_MAC]   In rrc_mac_config_req_gNB: slot 6 DL 1 UL 1
+[NR_MAC]   In rrc_mac_config_req_gNB: slot 7 DL 1 UL 1
+[NR_MAC]   In rrc_mac_config_req_gNB: slot 8 DL 1 UL 1
+[NR_MAC]   In rrc_mac_config_req_gNB: slot 9 DL 1 UL 1
+[NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] gNB:OPENAIR NR RRC IN....
+[GTPU]   Initializing UDP for local address 192.168.1.124 with port 2152
+[ITTI]   Created Posix thread TASK_GTPV1_U
+[GTPU]   bind: Address already in use
+[GTPU]   failed to bind socket: 192.168.1.124 2152 
+[GTPU]   can't create GTP-U instance
+[GTPU]   Created gtpu instance id: -1
+NFAPI*** - mutex and cond created - will block shortly for completion of PNF connection
+NFAPI MODE:PNF
+START MAIN THREADS
+RC.nb_nr_L1_inst:1
+Initializing gNB threads single_thread_flag:1 wait_for_sync:0
+[PHY]   Initializing gNB 0 single_thread_flag:1
+[PHY]   Initializing gNB 0
+[PHY]   Registering with MAC interface module (before 0x5644a55608f0)
+[PHY]   Installing callbacks for IF_Module - UL_indication
+[PHY]   Registering with MAC interface module (after 0x5644a55608f0)
+[PHY]   Setting indication lists
+[PHY]   [nr-gnb.c] gNB structure allocated
+wait_gNBs()
+Waiting for gNB L1 instances to all get configured ... sleeping 50ms (nb_nr_sL1_inst 1)
+gNB L1 are configured
+About to Init RU threads RC.nb_RU:1
+Initializing RU threads
+configuring RU from file
+[LIBCONFIG] RUs.[0]: 33/33 parameters successfully set, (25 to default value)
+Set RU mask to 1
+Creating RC.ru[0]:0x5644a55631d0
+[PHY]   Setting clock source to internal
+[PHY]   Setting time source to internal
+Setting function for RU 0 to gNodeB_3GPP
+[RU 0] Setting nr_flag 0, nr_band 3, nr_scs_for_raster 1
+[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 4
+[PHY]   DJP - delete code above this /home/labuser/OAI_L1/openairinterface5g/executables/nr-ru.c:1733
+[PHY]   Copying frame parms from gNB in RC to gNB 0 in ru 0 and frame_parms in ru
+configuring ru_id 0 (start_rf 0x5644a342f6f0)
+[PHY]   Starting ru_thread 0
+[PHY]   Initializing RU proc 0 (,synch_to_ext_device),
+[PHY]   Starting RU 0 (,synch_to_ext_device),
+[PHY]   Initializing frame parms for mu 0, N_RB 106, Ncp 0
+[PHY]   Init: N_RB_DL 106, first_carrier_offset 900, nb_prefix_samples 108,nb_prefix_samples0 120
+[PHY]   fp->scs=15000
+[PHY]   fp->ofdm_symbol_size=1536
+[PHY]   fp->nb_prefix_samples0=120
+[PHY]   fp->nb_prefix_samples=108
+[PHY]   fp->slots_per_subframe=1
+[PHY]   fp->samples_per_subframe_wCP=21504
+[PHY]   fp->samples_per_frame_wCP=215040
+[PHY]   fp->samples_per_subframe=23040
+[PHY]   fp->samples_per_frame=230400
+[PHY]   fp->dl_CarrierFreq=1834540000
+[PHY]   fp->ul_CarrierFreq=1757040000
+[PHY]   Channel 0: setting tx_gain offset 90, rx_gain offset 125, tx_freq 1834540000 Hz, rx_freq 1757040000 Hz, tune_offset 0 Hz
+[PHY]   Initializing RU signal buffers (if_south local RF) nb_tx 1, nb_rx 1
+[PHY]   [INIT] common.txdata[0] = 0x7f2d6038c040 (922880 bytes,sf_extension 320)
+[PHY]   [INIT] common.txdata[0] = 0x7f2d6038c540 
+[PHY]   nb_tx 1
+[PHY]   rxdata_7_5kHz[0] 0x7f2d6024f040 for RU 0
+[PHY]   [INIT] common.txdata_BF= 0x7f2d38000b00 (8 bytes)
+[PHY]   txdataF_BF[0] 0x7f2d38000b80 for RU 0
+[PHY]   rxdataF[0] 0x7f2d60127040 for RU 0
+[PHY]   [INIT] nr_phy_init_RU() ru->num_gNB:1 
+[LIBCONFIG] device.recplay: 8/8 parameters successfully set, (8 to default value)
+[LIBCONFIG] device: 1/1 parameters successfully set, (1 to default value)
+[LIBCONFIG] loader: 2/2 parameters successfully set, (2 to default value)
+[LIBCONFIG] loader.oai_device: 2/2 parameters successfully set, (1 to default value)
+shlib_path liboai_device.so
+[LOADER] library liboai_device.so successfully loaded
+[HW]   openair0_cfg[0].sdr_addrs == '(null)'
+[HW]   openair0_cfg[0].clock_source == '0' (internal = 0, external = 1)
+[HW]   UHD version 4.7.0.0-0ubuntu1~bionic1 (4.7.0)
+[INFO] [UHD] linux; GNU C++ version 7.5.0; Boost_106501; UHD_4.7.0.0-0ubuntu1~bionic1
+[HW]   Found USRP b200
+[PHY]   init feptx thread 0
+[PHY]   init feptx thread 1
+waiting for NFAPI PNF connection and population of global structure (main?)
+[INFO] [B200] Detected Device: B210
+[INFO] [B200] Operating over USB 3.
+[INFO] [B200] Initialize CODEC control...
+[INFO] [B200] Initialize Radio control...
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Asking for clock rate 30.720000 MHz... 
+[INFO] [B200] Actually got clock rate 30.720000 MHz.
+[HW]   Setting clock source to internal
+[HW]   Setting time source to internal
+-- Using calibration table: calib_table_b210_38
+[INFO] [B200] Asking for clock rate 23.040000 MHz... 
+[INFO] [B200] Actually got clock rate 23.040000 MHz.
+[HW]   cal 0: freq 3500000000.000000, offset 44.000000, diff 1742960000.000000
+[HW]   cal 1: freq 2660000000.000000, offset 49.800000, diff 902960000.000000
+[HW]   cal 2: freq 2300000000.000000, offset 51.000000, diff 542960000.000000
+[HW]   cal 3: freq 1880000000.000000, offset 53.000000, diff 122960000.000000
+[HW]   cal 4: freq 816000000.000000, offset 57.000000, diff 941040000.000000
+[HW]   RX Gain 0 125.000000 (54.250000) => 70.750000 (max 76.000000)
+[HW]   USRP TX_GAIN:-0.25 gain_range:89.75 tx_gain:90.00
+[HW]   Actual master clock: 23.040000MHz...
+[HW]   Actual clock source internal...
+[HW]   Actual time source internal...
+[HW]   RF board max packet size 1916, size for 100µs jitter 2304 
+[HW]   rx_max_num_samps 1916
+[HW]   setting rx channel 0
+[HW]   RX Channel 0
+[HW]     Actual RX sample rate: 23.040000MSps...
+[HW]     Actual RX frequency: 1.757040GHz...
+[HW]     Actual RX gain: 70.000000...
+[HW]     Actual RX bandwidth: 20.000000M...
+[HW]     Actual RX antenna: RX2...
+[HW]   TX Channel 0
+[HW]     Actual TX sample rate: 23.040000MSps...
+[HW]     Actual TX frequency: 1.834540GHz...
+[HW]     Actual TX gain: 0.000000...
+[HW]     Actual TX bandwidth: 20.000000M...
+[HW]     Actual TX antenna: TX/RX...
+[HW]     Actual TX packet size: 1916
+[HW]   Device timestamp: 2.799499...
+[HW]   [RAU] has loaded USRP B200 device.
+setup_RU_buffers: frame_parms = 0x5644a5566aa0
+[PHY]   Signaling main thread that RU 0 is ready, sl_ahead 6
+waiting for sync (ru_thread,-1/0x5644a40882b4,0x5644a4e39700,0x5644a4c8e7e0)
+[PNF] waiting for OAI to be configured (eNB/RU)
+[PNF] OAI eNB/RU configured
+[PNF] About to call init_eNB_afterRU()
+[PHY]   init_eNB_afterRU() RC.nb_nr_inst:1
+[PHY]   RC.nb_nr_CC[inst:0]:0x7f2d647d0010
+[PHY]   [gNB 0] phy_init_nr_gNB() About to wait for gNB to be configured
+[LIBCONFIG] loader.dfts: 2/2 parameters successfully set, (1 to default value)
+shlib_path libdfts.so
+[LOADER] library libdfts.so successfully loaded
+[LIBCONFIG] loader.ldpc: 2/2 parameters successfully set, (1 to default value)
+shlib_path libldpc.so
+[LOADER] library libldpc.so successfully loaded
+[PHY]   Initialise nr transport
+[PHY]   Allocating Transport Channel Buffers for PUCCH 0/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 1/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 2/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 3/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 4/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 5/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 6/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 7/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 8/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 9/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 10/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 11/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 12/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 13/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 14/16
+[PHY]   Allocating Transport Channel Buffers for PUCCH 15/16
+[PHY]   Allocating Transport Channel Buffers for SRS 0/16
+[PHY]   Allocating Transport Channel Buffers for SRS 1/16
+[PHY]   Allocating Transport Channel Buffers for SRS 2/16
+[PHY]   Allocating Transport Channel Buffers for SRS 3/16
+[PHY]   Allocating Transport Channel Buffers for SRS 4/16
+[PHY]   Allocating Transport Channel Buffers for SRS 5/16
+[PHY]   Allocating Transport Channel Buffers for SRS 6/16
+[PHY]   Allocating Transport Channel Buffers for SRS 7/16
+[PHY]   Allocating Transport Channel Buffers for SRS 8/16
+[PHY]   Allocating Transport Channel Buffers for SRS 9/16
+[PHY]   Allocating Transport Channel Buffers for SRS 10/16
+[PHY]   Allocating Transport Channel Buffers for SRS 11/16
+[PHY]   Allocating Transport Channel Buffers for SRS 12/16
+[PHY]   Allocating Transport Channel Buffers for SRS 13/16
+[PHY]   Allocating Transport Channel Buffers for SRS 14/16
+[PHY]   Allocating Transport Channel Buffers for SRS 15/16
+[PHY]   Allocating Transport Channel Buffers for ULSCH  0/8
+[PHY]   Allocating Transport Channel Buffers for ULSCH  1/8
+[PHY]   Allocating Transport Channel Buffers for ULSCH  2/8
+[PHY]   Allocating Transport Channel Buffers for ULSCH  3/8
+[PHY]   Allocating Transport Channel Buffers for ULSCH  4/8
+[PHY]   Allocating Transport Channel Buffers for ULSCH  5/8
+[PHY]   Allocating Transport Channel Buffers for ULSCH  6/8
+[PHY]   Allocating Transport Channel Buffers for ULSCH  7/8
+[PHY]   Mapping RX ports from 1 RUs to gNB 0
+[PHY]   gNB->num_RU:1
+[PHY]   Attaching RU 0 antenna 0 to gNB antenna 0
+[PHY]   Number of threads requested in config file: 4, Number of threads available on this machine: 4
+create a thread for core -1
+create a thread for core -1
+create a thread for core -1
+create a thread for core -1
+[PHY]   Allocating Transport Channel Buffers for DLSCH 0/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 1/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 2/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 3/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 4/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 5/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 6/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 7/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 0/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 1/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 2/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 3/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 4/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 5/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 6/8
+[PHY]   Allocating Transport Channel Buffers for DLSCH 7/8
+waiting for sync (L1_stats_thread,-1/0x5644a40882b4,0x5644a4e39700,0x5644a4c8e7e0)
+NFAPI: got sync (main?)
+wait RUs
+[PHY]   Waiting for RUs to be configured ... RC.ru_mask:00
+[PHY]   RUs configured
+ALL RUs READY!
+RC.nb_RU:1
+ALL RUs ready - init gNBs
+NFAPI mode - DO NOT call init_gNB_afterRU()
+ALL RUs ready - ALL gNBs ready
+Sending sync to all threads
+got sync (ru_thread)
+got sync (L1_stats_thread)
+About to call end_configmodule() from main() /home/labuser/OAI_L1/openairinterface5g/executables/nr-softmodem.c:790
+Called end_configmodule() from main() /home/labuser/OAI_L1/openairinterface5g/executables/nr-softmodem.c:795
+TYPE <CTRL-C> TO TERMINATE
+Entering ITTI signals handler
+[PHY]   RU 0 rf device ready
+[PHY]   RU 0 RF started
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+sleep...
+[MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 0
+[MWNL] pnf_p7_slot_ind
+[NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
+[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 6
+[NFAPI PNF P7] The current_sfn_slot_dec : 6 <= recv_sfn_slot_dec + timing_window: 33
+[NFAPI PNF] number of pdu is 0
+[MWNL]  NR_UL_indication
+[MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 1
+[MWNL] pnf_p7_slot_ind
+[MWNL]  NR_UL_indication
+[NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
+[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 9
+[NFAPI PNF P7] The current_sfn_slot_dec : 9 <= recv_sfn_slot_dec + timing_window: 33
+[NFAPI PNF] number of pdu is 0
+slot: 0, expected slot: 1
+[MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 2
+[MWNL] pnf_p7_slot_ind
+[NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
+[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 9
+[NFAPI PNF P7] The current_sfn_slot_dec : 9 <= recv_sfn_slot_dec + timing_window: 33
+[NFAPI PNF] number of pdu is 0
+[MWNL]  NR_UL_indication
+[PHY]   error, pull two msg, none is good
+[PHY]   order mistake
+[MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 3
+[MWNL] pnf_p7_slot_ind
+[MWNL]  NR_UL_indication
+[NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
+[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 10
+[NFAPI PNF P7] The current_sfn_slot_dec : 10 <= recv_sfn_slot_dec + timing_window: 33
+[NFAPI PNF] number of pdu is 0
+[mwnl test] im alive
+[MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 4
+[MWNL] pnf_p7_slot_ind
+[MWNL]  NR_UL_indication
+[NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
+[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 10
+[NFAPI PNF P7] The current_sfn_slot_dec : 10 <= recv_sfn_slot_dec + timing_window: 33
+[NFAPI PNF] number of pdu is 0
+slot: 0, expected slot: 1
+[MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 5
+[MWNL] pnf_p7_slot_ind
+[NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
+[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 11
+[NFAPI PNF P7] The current_sfn_slot_dec : 11 <= recv_sfn_slot_dec + timing_window: 33
+[NFAPI PNF] number of pdu is 0
+[MWNL]  NR_UL_indication
+U[PNF] waiting for OAI to be started
+^C
