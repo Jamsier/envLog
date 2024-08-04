@@ -26,7 +26,7 @@ Reading in command-line options
 Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1
 [LIBCONFIG] TTracer: 4/4 parameters successfully set, (4 to default value)
 configuring for RAU/RRU
-CPU Freq is 2.999948 
+CPU Freq is 3.000122 
 [ITTI]   Starting itti queue: TASK_UNKNOWN as task 0
 [ITTI]   Starting itti queue: TASK_TIMER as task 1
 [ITTI]   Starting itti queue: TASK_L2L1 as task 2
@@ -79,9 +79,9 @@ CPU Freq is 2.999948
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
 [NR_PHY]   PRB blacklist 
-[NR_PHY]   RC.gNB = 0x5644a555bef0
+[NR_PHY]   RC.gNB = 0x55ec907c1e40
 [LIBCONFIG] L1s.[0]: 15/15 parameters successfully set, (6 to default value)
-[NR_PHY]   RC.gNB[0] = 0x7f2d647d0010
+[NR_PHY]   RC.gNB[0] = 0x7fbb09307010
 [NR_PHY]   Copying 0 blacklisted PRB to L1 context
 [PHY]   RCconfig_NR_L1() NFAPI PNF mode - RC.nb_nr_inst=1 this is because phy_init_RU() uses that to index and not RC.num_gNB - why the 2 similar variables?
 [PHY]   RCconfig_NR_L1() NFAPI PNF mode - RC.nb_nr_CC[0]=1 for init_gNB_afterRU()
@@ -97,7 +97,7 @@ configure_nr_nfapi_pnf() VNF:127.0.0.1:62324 PNF_PHY[addr:127.0.0.2 UDP:tx_addr:
 Initializing northbound interface for L1
 [PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
 [PHY]   Installing callbacks for IF_Module - UL_indication
-[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x5644a55608f0
+[MAC]   Allocating shared L1/L2 interface structure for instance 0 @ 0x55ec907c6840
 [PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 
  Read message unpack:  0  0  1  0  0  8  0  0 
@@ -188,21 +188,21 @@ DL frequency 1842500000: band 3, UL frequency 1747500000
 [PHY]   fp->ul_CarrierFreq=1747500000
 [PNF] 1 vnf p7 127.0.0.1:50611 timing 30 3 10
 [PNF] Sent NFAPI_PNF_CONFIG_RESPONSE phy_id:1
-[ITTI]   Created Posix thread TASK_SCTP
-[LIBCONFIG] eNBs.[0]: 1/1 parameters successfully set, (1 to default value)
-[LIBCONFIG] gNBs.[0]: 1/1 parameters successfully set, (1 to default value)
-[X2AP]   X2AP is disabled.
 
  Read message unpack:  0  1  0  4  0  8  0  0 
 [PNF] Received NFAPI_START_REQ phy_id:1
 [PNF] P7 remote:127.0.0.1:50611 local:127.0.0.2:32123
 subframe_buffer_size configured using phy_info->timing_window:30
 [PNF] Sending PNF_START_RESP
-Sending NFAPI_START_RESPONSE config:0x5644a555e670 phy_id:1
+Sending NFAPI_START_RESPONSE config:0x55ec907c45c0 phy_id:1
 [PHY]   l1_north_init_gNB() RC.nb_nr_L1_inst:1
 Calling sched_setscheduler(79)
 [PHY]   Installing callbacks for IF_Module - UL_indication
 [PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
+[ITTI]   Created Posix thread TASK_SCTP
+[LIBCONFIG] eNBs.[0]: 1/1 parameters successfully set, (1 to default value)
+[LIBCONFIG] gNBs.[0]: 1/1 parameters successfully set, (1 to default value)
+[X2AP]   X2AP is disabled.
 [LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
 [NGAP]   Starting NGAP layer
 [ITTI]   Created Posix thread TASK_NGAP
@@ -233,15 +233,15 @@ Initializing northbound interface for L1
 [LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
+[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
+[MAC]   [MAIN] Init function start:nb_nr_macrlc_inst=1
 
  Read message unpack:  0  0  1  0  0  8  0  0 
 [PNF] pnf param request
-[LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
 
  Read message unpack:  0  0  1  2  0  26  0  0  16  3  0  14  0  2  0  2  0  0  0  0  0  0  0  0  0  0 
 [PNF] pnf config request
 [PNF] pnf config request assigned phy_id 2 to phy_config_index 0
-[MAC]   [MAIN] Init function start:nb_nr_macrlc_inst=1
 [PNF] Sent pnf_config_resp
 
  Read message unpack:  0  0  1  4  0  8  0  0 
@@ -261,13 +261,13 @@ RUNNING pack_param_response
 [PHY]   Installing callbacks for IF_Module - UL_indication
 [PHY]   l1_north_init_gNB() RC.gNB[0] installing callbacks
 [GNB_APP]   Allocating gNB_RRC_INST for 1 instances
-[PHY]   gNB_app_task() RC.nb_nr_inst:1 RC.nrrrc:0x7f2d5400cdf0
-[PHY]   gNB_app_task() Creating RRC instance RC.nrrrc[0]:0x7f2d5400ce10 (1 of 1)
+[PHY]   gNB_app_task() RC.nb_nr_inst:1 RC.nrrrc:0x7fbaf800cdf0
+[PHY]   gNB_app_task() Creating RRC instance RC.nrrrc[0]:0x7fbaf800ce10 (1 of 1)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
 [LIBCONFIG] gNBs.[0].pdcch_ConfigSIB1.[0]: 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0].servingCellConfigCommon.[0]: 60/60 parameters successfully set, (8 to default value)
-[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 368629, DLBand 3, ABSFREQPOINTA 365000, DLBW 106,RACH_TargetReceivedPower -96
+[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 369548, DLBand 3, ABSFREQPOINTA 368000, DLBW 106,RACH_TargetReceivedPower -96
 [PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
 [NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
 [NR_MAC]   NR band 3, duplex mode FDD, duplex spacing = -95000 KHz
@@ -314,20 +314,19 @@ NRRRC 0: Southbound Transport local_mac
 [LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
 [GTPU]   SA mode 
 [GTPU]   Configuring GTPu address : 192.168.1.124 -> 7c01a8c0
-[GNB_APP]   [gNB 0] gNB_app_register for instance 0
 [NGAP]   Registered new gNB[0] and macro gNB id 3584
+[GNB_APP]   [gNB 0] gNB_app_register for instance 0
 [NGAP]   [gNB 0] check the amf registration state
 [NR_RRC]   Entering main loop of NR_RRC message task
 [NR_RRC]   Received message NRRRC_CONFIGURATION_REQ
-[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x7f2d5400e4f0
+[NR_RRC]   [gNB 0] Received NRRRC_CONFIGURATION_REQ : 0x7fbaf800e4f0
 [NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Init...
-[ITTI]   Created Posix thread TASK_RRC_GNB
 [PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
 [NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
 [NR_MAC]   NR band 3, duplex mode FDD, duplex spacing = -95000 KHz
 [NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] Checking release 
-[NR_RRC]   SIB1 freq: absoluteFrequencySSB 368629, absoluteFrequencyPointA 365000
-[NR_RRC]   SIB1 freq: absolute_diff 3629, 1*(absolute_diff/(12*3) - 10) 90
+[NR_RRC]   SIB1 freq: absoluteFrequencySSB 369548, absoluteFrequencyPointA 368000
+[NR_RRC]   SIB1 freq: absolute_diff 1548, 1*(absolute_diff/(12*3) - 10) 33
 <SIB1>
     <cellSelectionInfo>
         <q-RxLevMin>-65</q-RxLevMin>
@@ -343,6 +342,7 @@ NRRRC 0: Southbound Transport local_mac
                             <MCC-MNC-Digit>6</MCC-MNC-Digit>
                         </mcc>
                         <mnc>
+                            <MCC-MNC-Digit>0</MCC-MNC-Digit>
                             <MCC-MNC-Digit>9</MCC-MNC-Digit>
                             <MCC-MNC-Digit>2</MCC-MNC-Digit>
                         </mnc>
@@ -366,7 +366,7 @@ NRRRC 0: Southbound Transport local_mac
                         <freqBandIndicatorNR>3</freqBandIndicatorNR>
                     </NR-MultiBandInfo>
                 </frequencyBandList>
-                <offsetToPointA>90</offsetToPointA>
+                <offsetToPointA>33</offsetToPointA>
                 <scs-SpecificCarrierList>
                     <SCS-SpecificCarrier>
                         <offsetToCarrier>0</offsetToCarrier>
@@ -582,19 +582,19 @@ NRRRC 0: Southbound Transport local_mac
 [PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
 [PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
 [NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
-[NR_MAC]   Computing frequency (pointA 365000 => 1825000 KHz (freq_min 1805000 KHz, NR band 3 N_OFFs 361000))
+[NR_MAC]   Computing frequency (pointA 368000 => 1840000 KHz (freq_min 1805000 KHz, NR band 3 N_OFFs 361000))
 [NR_MAC]   config_common() dl_BandwidthP:20
 [PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
 [PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
 [NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
-[NR_MAC]   Computing frequency (pointA 349500 => 1747500 KHz (freq_min 1710000 KHz, NR band 3 N_OFFs 342000))
+[NR_MAC]   Computing frequency (pointA 350500 => 1752500 KHz (freq_min 1710000 KHz, NR band 3 N_OFFs 342000))
 [PHY]   not found same deltaf_raster == scs_khz, use only band and last deltaf_raster 
 [NR_MAC]   NR band duplex spacing is -95000 KHz (nr_bandtable[2].band = 3)
 [NR_MAC]   NR band 3, duplex mode FDD, duplex spacing = -95000 KHz
 [NR_MAC]   Set RX antenna number to 1, Set TX antenna number to 1 (num ssb 1: 80000000,0)
-DL frequency 1834540000: band 3, UL frequency 1757040000
-[PHY]   DL frequency 1834540000 Hz, UL frequency 1757040000 Hz: band 3, uldl offset -77500000 Hz
-[PHY]   Configuring MIB for instance 0, : (Nid_cell 0,DL freq 1834540000, UL freq 1757040000)
+DL frequency 1849540000: band 3, UL frequency 1762040000
+[PHY]   DL frequency 1849540000 Hz, UL frequency 1762040000 Hz: band 3, uldl offset -87500000 Hz
+[PHY]   Configuring MIB for instance 0, : (Nid_cell 0,DL freq 1849540000, UL freq 1762040000)
 [PHY]   Initializing frame parms for mu 0, N_RB 106, Ncp 0
 [PHY]   Init: N_RB_DL 106, first_carrier_offset 900, nb_prefix_samples 108,nb_prefix_samples0 120
 [PHY]   Already gNB already configured, do nothing
@@ -609,12 +609,13 @@ DL frequency 1834540000: band 3, UL frequency 1757040000
 [NR_MAC]   In rrc_mac_config_req_gNB: slot 8 DL 1 UL 1
 [NR_MAC]   In rrc_mac_config_req_gNB: slot 9 DL 1 UL 1
 [NR_RRC]   [FRAME 00000][gNB][MOD 00][RNTI 0] gNB:OPENAIR NR RRC IN....
+[ITTI]   Created Posix thread TASK_RRC_GNB
 [GTPU]   Initializing UDP for local address 192.168.1.124 with port 2152
-[ITTI]   Created Posix thread TASK_GTPV1_U
 [GTPU]   bind: Address already in use
 [GTPU]   failed to bind socket: 192.168.1.124 2152 
 [GTPU]   can't create GTP-U instance
 [GTPU]   Created gtpu instance id: -1
+[ITTI]   Created Posix thread TASK_GTPV1_U
 NFAPI*** - mutex and cond created - will block shortly for completion of PNF connection
 NFAPI MODE:PNF
 START MAIN THREADS
@@ -622,9 +623,9 @@ RC.nb_nr_L1_inst:1
 Initializing gNB threads single_thread_flag:1 wait_for_sync:0
 [PHY]   Initializing gNB 0 single_thread_flag:1
 [PHY]   Initializing gNB 0
-[PHY]   Registering with MAC interface module (before 0x5644a55608f0)
+[PHY]   Registering with MAC interface module (before 0x55ec907c6840)
 [PHY]   Installing callbacks for IF_Module - UL_indication
-[PHY]   Registering with MAC interface module (after 0x5644a55608f0)
+[PHY]   Registering with MAC interface module (after 0x55ec907c6840)
 [PHY]   Setting indication lists
 [PHY]   [nr-gnb.c] gNB structure allocated
 wait_gNBs()
@@ -633,9 +634,9 @@ gNB L1 are configured
 About to Init RU threads RC.nb_RU:1
 Initializing RU threads
 configuring RU from file
-[LIBCONFIG] RUs.[0]: 33/33 parameters successfully set, (25 to default value)
+[LIBCONFIG] RUs.[0]: 33/33 parameters successfully set, (24 to default value)
 Set RU mask to 1
-Creating RC.ru[0]:0x5644a55631d0
+Creating RC.ru[0]:0x55ec907c9120
 [PHY]   Setting clock source to internal
 [PHY]   Setting time source to internal
 Setting function for RU 0 to gNodeB_3GPP
@@ -643,7 +644,7 @@ Setting function for RU 0 to gNodeB_3GPP
 [PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 4
 [PHY]   DJP - delete code above this /home/labuser/OAI_L1/openairinterface5g/executables/nr-ru.c:1733
 [PHY]   Copying frame parms from gNB in RC to gNB 0 in ru 0 and frame_parms in ru
-configuring ru_id 0 (start_rf 0x5644a342f6f0)
+configuring ru_id 0 (start_rf 0x55ec8c97e6f0)
 [PHY]   Starting ru_thread 0
 [PHY]   Initializing RU proc 0 (,synch_to_ext_device),
 [PHY]   Starting RU 0 (,synch_to_ext_device),
@@ -658,17 +659,17 @@ configuring ru_id 0 (start_rf 0x5644a342f6f0)
 [PHY]   fp->samples_per_frame_wCP=215040
 [PHY]   fp->samples_per_subframe=23040
 [PHY]   fp->samples_per_frame=230400
-[PHY]   fp->dl_CarrierFreq=1834540000
-[PHY]   fp->ul_CarrierFreq=1757040000
-[PHY]   Channel 0: setting tx_gain offset 90, rx_gain offset 125, tx_freq 1834540000 Hz, rx_freq 1757040000 Hz, tune_offset 0 Hz
+[PHY]   fp->dl_CarrierFreq=1849540000
+[PHY]   fp->ul_CarrierFreq=1762040000
+[PHY]   Channel 0: setting tx_gain offset 90, rx_gain offset 125, tx_freq 1849540000 Hz, rx_freq 1762040000 Hz, tune_offset 0 Hz
 [PHY]   Initializing RU signal buffers (if_south local RF) nb_tx 1, nb_rx 1
-[PHY]   [INIT] common.txdata[0] = 0x7f2d6038c040 (922880 bytes,sf_extension 320)
-[PHY]   [INIT] common.txdata[0] = 0x7f2d6038c540 
+[PHY]   [INIT] common.txdata[0] = 0x7fbb040cb040 (922880 bytes,sf_extension 320)
+[PHY]   [INIT] common.txdata[0] = 0x7fbb040cb540 
 [PHY]   nb_tx 1
-[PHY]   rxdata_7_5kHz[0] 0x7f2d6024f040 for RU 0
-[PHY]   [INIT] common.txdata_BF= 0x7f2d38000b00 (8 bytes)
-[PHY]   txdataF_BF[0] 0x7f2d38000b80 for RU 0
-[PHY]   rxdataF[0] 0x7f2d60127040 for RU 0
+[PHY]   rxdata_7_5kHz[0] 0x7fbb04070040 for RU 0
+[PHY]   [INIT] common.txdata_BF= 0x7fbad8000b00 (8 bytes)
+[PHY]   txdataF_BF[0] 0x7fbad8000b80 for RU 0
+[PHY]   rxdataF[0] 0x7fbb0401b040 for RU 0
 [PHY]   [INIT] nr_phy_init_RU() ru->num_gNB:1 
 [LIBCONFIG] device.recplay: 8/8 parameters successfully set, (8 to default value)
 [LIBCONFIG] device: 1/1 parameters successfully set, (1 to default value)
@@ -676,9 +677,10 @@ configuring ru_id 0 (start_rf 0x5644a342f6f0)
 [LIBCONFIG] loader.oai_device: 2/2 parameters successfully set, (1 to default value)
 shlib_path liboai_device.so
 [LOADER] library liboai_device.so successfully loaded
-[HW]   openair0_cfg[0].sdr_addrs == '(null)'
+[HW]   openair0_cfg[0].sdr_addrs == 'type=b200'
 [HW]   openair0_cfg[0].clock_source == '0' (internal = 0, external = 1)
 [HW]   UHD version 4.7.0.0-0ubuntu1~bionic1 (4.7.0)
+[HW]   Checking for USRP with args type=b200
 [INFO] [UHD] linux; GNU C++ version 7.5.0; Boost_106501; UHD_4.7.0.0-0ubuntu1~bionic1
 [HW]   Found USRP b200
 [PHY]   init feptx thread 0
@@ -699,11 +701,11 @@ waiting for NFAPI PNF connection and population of global structure (main?)
 -- Using calibration table: calib_table_b210_38
 [INFO] [B200] Asking for clock rate 23.040000 MHz... 
 [INFO] [B200] Actually got clock rate 23.040000 MHz.
-[HW]   cal 0: freq 3500000000.000000, offset 44.000000, diff 1742960000.000000
-[HW]   cal 1: freq 2660000000.000000, offset 49.800000, diff 902960000.000000
-[HW]   cal 2: freq 2300000000.000000, offset 51.000000, diff 542960000.000000
-[HW]   cal 3: freq 1880000000.000000, offset 53.000000, diff 122960000.000000
-[HW]   cal 4: freq 816000000.000000, offset 57.000000, diff 941040000.000000
+[HW]   cal 0: freq 3500000000.000000, offset 44.000000, diff 1737960000.000000
+[HW]   cal 1: freq 2660000000.000000, offset 49.800000, diff 897960000.000000
+[HW]   cal 2: freq 2300000000.000000, offset 51.000000, diff 537960000.000000
+[HW]   cal 3: freq 1880000000.000000, offset 53.000000, diff 117960000.000000
+[HW]   cal 4: freq 816000000.000000, offset 57.000000, diff 946040000.000000
 [HW]   RX Gain 0 125.000000 (54.250000) => 70.750000 (max 76.000000)
 [HW]   USRP TX_GAIN:-0.25 gain_range:89.75 tx_gain:90.00
 [HW]   Actual master clock: 23.040000MHz...
@@ -714,27 +716,27 @@ waiting for NFAPI PNF connection and population of global structure (main?)
 [HW]   setting rx channel 0
 [HW]   RX Channel 0
 [HW]     Actual RX sample rate: 23.040000MSps...
-[HW]     Actual RX frequency: 1.757040GHz...
+[HW]     Actual RX frequency: 1.762040GHz...
 [HW]     Actual RX gain: 70.000000...
 [HW]     Actual RX bandwidth: 20.000000M...
 [HW]     Actual RX antenna: RX2...
 [HW]   TX Channel 0
 [HW]     Actual TX sample rate: 23.040000MSps...
-[HW]     Actual TX frequency: 1.834540GHz...
+[HW]     Actual TX frequency: 1.849540GHz...
 [HW]     Actual TX gain: 0.000000...
 [HW]     Actual TX bandwidth: 20.000000M...
 [HW]     Actual TX antenna: TX/RX...
 [HW]     Actual TX packet size: 1916
-[HW]   Device timestamp: 2.799499...
+[HW]   Device timestamp: 2.801009...
 [HW]   [RAU] has loaded USRP B200 device.
-setup_RU_buffers: frame_parms = 0x5644a5566aa0
+setup_RU_buffers: frame_parms = 0x55ec907cc9f0
 [PHY]   Signaling main thread that RU 0 is ready, sl_ahead 6
-waiting for sync (ru_thread,-1/0x5644a40882b4,0x5644a4e39700,0x5644a4c8e7e0)
+waiting for sync (ru_thread,-1/0x55ec8d5d72b4,0x55ec8e388700,0x55ec8e1dd7e0)
 [PNF] waiting for OAI to be configured (eNB/RU)
 [PNF] OAI eNB/RU configured
 [PNF] About to call init_eNB_afterRU()
 [PHY]   init_eNB_afterRU() RC.nb_nr_inst:1
-[PHY]   RC.nb_nr_CC[inst:0]:0x7f2d647d0010
+[PHY]   RC.nb_nr_CC[inst:0]:0x7fbb09307010
 [PHY]   [gNB 0] phy_init_nr_gNB() About to wait for gNB to be configured
 [LIBCONFIG] loader.dfts: 2/2 parameters successfully set, (1 to default value)
 shlib_path libdfts.so
@@ -807,7 +809,7 @@ create a thread for core -1
 [PHY]   Allocating Transport Channel Buffers for DLSCH 5/8
 [PHY]   Allocating Transport Channel Buffers for DLSCH 6/8
 [PHY]   Allocating Transport Channel Buffers for DLSCH 7/8
-waiting for sync (L1_stats_thread,-1/0x5644a40882b4,0x5644a4e39700,0x5644a4c8e7e0)
+waiting for sync (L1_stats_thread,-1/0x55ec8d5d72b4,0x55ec8e388700,0x55ec8e1dd7e0)
 NFAPI: got sync (main?)
 wait RUs
 [PHY]   Waiting for RUs to be configured ... RC.ru_mask:00
@@ -837,43 +839,43 @@ sleep...
 sleep...
 [MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 0
 [MWNL] pnf_p7_slot_ind
+[MWNL]  NR_UL_indication
 [NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
 [NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 6
 [NFAPI PNF P7] The current_sfn_slot_dec : 6 <= recv_sfn_slot_dec + timing_window: 33
 [NFAPI PNF] number of pdu is 0
-[MWNL]  NR_UL_indication
 [MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 1
 [MWNL] pnf_p7_slot_ind
 [MWNL]  NR_UL_indication
 [NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
-[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 9
-[NFAPI PNF P7] The current_sfn_slot_dec : 9 <= recv_sfn_slot_dec + timing_window: 33
+[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 8
+[NFAPI PNF P7] The current_sfn_slot_dec : 8 <= recv_sfn_slot_dec + timing_window: 33
 [NFAPI PNF] number of pdu is 0
 slot: 0, expected slot: 1
 [MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 2
 [MWNL] pnf_p7_slot_ind
 [NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
+[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 8
+[NFAPI PNF P7] The current_sfn_slot_dec : 8 <= recv_sfn_slot_dec + timing_window: 33
+[NFAPI PNF] number of pdu is 0
+[MWNL]  NR_UL_indication
+[PHY]   error, pull two msg, none is good
+[MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 3
+[MWNL] pnf_p7_slot_ind
+[NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
 [NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 9
 [NFAPI PNF P7] The current_sfn_slot_dec : 9 <= recv_sfn_slot_dec + timing_window: 33
 [NFAPI PNF] number of pdu is 0
 [MWNL]  NR_UL_indication
-[PHY]   error, pull two msg, none is good
 [PHY]   order mistake
-[MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 3
-[MWNL] pnf_p7_slot_ind
-[MWNL]  NR_UL_indication
-[NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
-[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 10
-[NFAPI PNF P7] The current_sfn_slot_dec : 10 <= recv_sfn_slot_dec + timing_window: 33
-[NFAPI PNF] number of pdu is 0
 [mwnl test] im alive
 [MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 4
 [MWNL] pnf_p7_slot_ind
-[MWNL]  NR_UL_indication
 [NFAPI PNF P7] p7_msg_sfn  : 0, p7_msg_slot: 3
-[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 10
-[NFAPI PNF P7] The current_sfn_slot_dec : 10 <= recv_sfn_slot_dec + timing_window: 33
+[NFAPI PNF P7] phy_sfn     : 0, phy_slot   : 11
+[NFAPI PNF P7] The current_sfn_slot_dec : 11 <= recv_sfn_slot_dec + timing_window: 33
 [NFAPI PNF] number of pdu is 0
+[MWNL]  NR_UL_indication
 slot: 0, expected slot: 1
 [MAC]   [GNB]  the NFAPI_MODE_PNF in rx_func is about to send slot_ind sfn : 0, slot : 5
 [MWNL] pnf_p7_slot_ind
