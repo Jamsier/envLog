@@ -11,10 +11,10 @@ INFO  -->  SCTP : Polling started at RIC
 
 INFO  -->  E2AP : Received E2AP message buffer
 msg: qlen: 0001 mlen: 0020   00-->00 region: 01
-dat: 00 01 00 10 00 00 01 00 03 00 09 00 64 f6 29 50 ............d.)P
+dat: 00 01 00 10 00 00 01 00 03 00 09 00 64 06 29 50 ............d.)P
      00 00 00 01                                     ....
      
-DEBUG  -->  E2AP : Received flat buffer to be decoded : 010100010309064fffffff629500001
+DEBUG  -->  E2AP : Received flat buffer to be decoded : 010100010309064629500001
 <E2AP-PDU>
     <initiatingMessage>
         <procedureCode>1</procedureCode>
@@ -29,7 +29,7 @@ DEBUG  -->  E2AP : Received flat buffer to be decoded : 010100010309064fffffff62
                             <GlobalE2node-ID>
                                 <gNB>
                                     <global-gNB-ID>
-                                        <plmn-id>64 F6 29</plmn-id>
+                                        <plmn-id>64 06 29</plmn-id>
                                         <gnb-id>
                                             <gnb-ID>
                                                 00000000000000000000000000000001
@@ -197,9 +197,9 @@ INFO  -->  E2AP : Received E2AP message buffer
 msg: qlen: 0001 mlen: 0048   00-->00 region: 01
 dat: 00 05 00 2c 00 00 06 00 1d 00 05 00 00 01 00 01 ...,............
      00 05 00 02 00 01 00 0f 00 01 00 00 1c 00 01 00 ................
-     00 19 00 04 03 64 f6 29 00 1a 00 04 03 64 f6 29 .....d.).....d.)
+     00 19 00 04 03 64 06 29 00 1a 00 04 03 64 06 29 .....d.).....d.)
      
-DEBUG  -->  E2AP : Received flat buffer to be decoded : 0502c00601d05001010502010f01001c01001904364fffffff62901a04364fffffff629
+DEBUG  -->  E2AP : Received flat buffer to be decoded : 0502c00601d05001010502010f01001c0100190436462901a04364629
 <E2AP-PDU>
     <initiatingMessage>
         <procedureCode>5</procedureCode>
@@ -242,14 +242,14 @@ DEBUG  -->  E2AP : Received flat buffer to be decoded : 0502c00601d0500101050201
                         <id>25</id>
                         <criticality><reject/></criticality>
                         <value>
-                            <RICindicationHeader>64 F6 29</RICindicationHeader>
+                            <RICindicationHeader>64 06 29</RICindicationHeader>
                         </value>
                     </RICindication-IEs>
                     <RICindication-IEs>
                         <id>26</id>
                         <criticality><reject/></criticality>
                         <value>
-                            <RICindicationMessage>64 F6 29</RICindicationMessage>
+                            <RICindicationMessage>64 06 29</RICindicationMessage>
                         </value>
                     </RICindication-IEs>
                 </protocolIEs>
